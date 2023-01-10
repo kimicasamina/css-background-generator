@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>CSS COLOR GENERATOR</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 class="title">CSS BACKGROUND COLOR GENERATOR</h1>
+        <h2 class="subtitle">background: linear-gradient(#8AE3FF, #A852FF)</h2>
+        <button class="copy-btn">
+          COPY
+          <img src="./images/icons8-copy-24.png" alt="" />
+        </button>
+        <div class="alert-box">COPIED!</div>
+      </header>
+
+      <main>
+        <section class="color-inputs">
+          <h3>Choose a color</h3>
+          <input type="color" class="color1" value="#8AE3FF" />
+          <input type="color" class="color2" value="#A852FF" />
+        </section>
+
+        <section class="gradient">
+          <div class="linear">
+            <h3>Linear gradient</h3>
+            <button class="to-right gradient-btn" value="to right"></button>
+            <button class="to-bottom gradient-btn" value="to bottom"></button>
+            <button
+              class="to-bottom-right gradient-btn"
+              value="to bottom right"
+            ></button>
+            <button
+              class="to-top-right gradient-btn"
+              value="to top right"
+            ></button>
+          </div>
+          <div class="radial">
+            <h3>radial gradient</h3>
+            <button
+              class="farthest-corner gradient-btn"
+              value="farthest-corner"
+            ></button>
+            <button
+              class="closest-side gradient-btn"
+              value="closest-side"
+            ></button>
+            <button
+              class="farthest-side gradient-btn"
+              value="farthest-side"
+            ></button>
+            <button
+              class="closest-side gradient-btn"
+              value="closest-corner"
+            ></button>
+          </div>
+        </section>
+
+        <section class="randomize">
+          <button class="random-color-btn">Randomize Color</button>
+        </section>
+      </main>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>

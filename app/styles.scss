@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Press+Start+2P&family=Source+Code+Pro:wght@400;600&display=swap');
+
+// VARIABLES
+$red: #ff9378;
+$blue: #00FBBE;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  // border: solid 1px #eee;
+}
+
+h3 {
+  margin-bottom: 7px;
+}
+
+.container {
+  max-width: 1000px;
+  margin-inline: auto;
+}
+
+body {
+  background: linear-gradient($red, $blue);
+  min-height: 100vh;
+  width: 100vw;
+  text-align: center;
+  font-family: 'Source Code Pro', monospace;
+}
+
+header {
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  h1 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2rem;
+    padding: 50px 0;  
+    text-shadow: 2px 2px 0px rgb(28, 25, 25);
+  }
+  h2 {
+    font-size: 18px;
+  }
+
+  .subtitle {
+    margin-bottom: 10px;
+  }
+
+  .copy-btn {
+    padding: 5px 10px;
+    width: 100px;
+    border: solid 2px #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .alert-box {
+    display: none;
+  }
+  
+  .active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #000;
+    font-size: 4rem;
+    color: #eee;
+  }
+
+}
+
+main {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.color-inputs {
+  input[type="color"] {
+    width: 80px;
+    height: 40px;
+    border: solid 2px #000;
+    box-shadow: 2px 2px 0px 0px rgba(0,0,0,1);  }
+}
+
+.gradient {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 0;
+  width: 50vw;
+
+  .linear, .radial {
+    padding: 20px 0;
+  }
+
+  .gradient-btn {
+    width: 80px;
+    height: 80px;
+    border: solid 2px #000;
+    // border: none;
+    box-shadow: 5px 5px 10px -5px #000;
+  }
+
+  .linear .to-right {
+    background: linear-gradient(to right, $red, $blue)
+  }
+
+  .linear .to-bottom {
+    background: linear-gradient(to bottom, $red, $blue)
+  }
+
+  .linear .to-bottom-right {
+    background: linear-gradient(to bottom right, $red, $blue)
+  }
+
+  .linear .to-top-right {
+    background: linear-gradient(to top right, $red, $blue)
+  }
+
+  .radial .farthest-corner {
+    background: radial-gradient(farthest-corner, $red, $blue)
+  }
+
+  .radial .closest-side {
+    background: radial-gradient(closest-side, $red, $blue)
+  }
+
+  .radial .farthest-side {
+    background: radial-gradient(farthest-side, $red, $blue)
+  }
+
+  .radial .closest-corner {
+    background: radial-gradient(closest-corner, $red, $blue)
+  }
+
+}
+
+.randomize {
+  .random-color-btn {
+    padding: 10px 20px;
+    border: solid 2px #000;
+    text-transform: uppercase;
+  }
+}
